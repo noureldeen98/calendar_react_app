@@ -1,0 +1,44 @@
+.startTime,
+.endTime,
+.mission,
+.chairs,
+.NoOfusers {
+  border-radius: 15px;
+  height: 55px;
+  margin: 10px;
+  border: blue solid 2px;
+  text-align: center;
+  color: "darkskyblue";
+}
+
+.mission {
+  width: 300px;
+}
+
+.chairs,
+.NoOfusers {
+  width: 100px;
+}
+
+.NoOfusers {
+  background-color: #1766ff;
+}
+
+.deleteButton {
+  border-radius: 15px;
+  height: 55px;
+  width: 100px;
+  margin: 10px;
+  color: red;
+  border: red solid 2px;
+ background-color: white;
+}
+
+
+input, label {
+    display:block;
+}
+
+input{
+    margin-top: 60px;
+}

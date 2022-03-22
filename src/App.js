@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
+import NavbarComponent from '../src/components/NavbarComponents/navbarComponent'
+import CalendarComp from '../src/components/CalendarDatePicker/calendar'
+import TimePickerComponent from '../src/components/TimePickerComponent/timePickerComponent'
+import SmallCalendar from './components/SmallCalendar/smallCalendar'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
+    <NavbarComponent/>
+    <div className=' d-flex flex-column justify-content-center flex-md-row'>
+      <div>
+      <CalendarComp/>
+      </div>
+    <div>
+    <SmallCalendar/>
     </div>
+    
+    </div>
+
+    <TimePickerComponent/>
+    </div>
+    
+    </>
   );
 }
 
